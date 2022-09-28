@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+        }
+        #navparent{
+            border: 0px solid rgb(56, 51, 51);
+            display: flex;
+            justify-content:space-between;
+            height: 50px;
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        }
+        #logo{
+            width: 16%;
+            border: 0px solid red;
+            margin-left: 10%;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            }
+            #navmid{
+                display: flex;
+                border: 0px solid green;
+                width: 30%;
+                margin: auto;
+                /* justify-content: space-between; */
+                
+            }
+            .navselect{
+              display: flex;
+              border: none;
+              font-weight: bold;
+              
+              }
+            .navbutton{
+                margin: auto;
+                height:60%;
+                 font-weight: bold;
+                border: none;
+                background-color: white;
+            }
+            .hov:hover{
+                color: #1978ff;
+            }
+            
+            .signupall{
+                background-color:#1978ff;
+                margin: 10px;
+                color: white;
+                border-radius: 5px;
+                border: none;
+            }
+            #signbox{
+                margin-right: 15%;
+            }
+            #maintopsec{
+                width:60%;
+               height: 300px;
+                border: 0px solid blue;
+                margin: auto;
+                margin-top: 40px;
+                display: flex;
+                flex-direction: column;
+                
+                }
+                #maintopsec>div:nth-child(1){
+                    width: 68%;
+                 margin: auto;
+                 border: 0px solid teal;
+                 text-align: center;
+                }
+                #maintopsec>div:nth-child(2){
+                    width: 57%;
+                    text-align: center;
+                    border: 0px solid green;
+                    margin: auto;
+                }
+                #maintopsec>div:nth-child(3){
+                       border: 0px solid red;
+                       display: flex;
+                       width: 30%;
+                       justify-content: center;
+                       flex-direction: column;
+                       text-align: center;
+                       margin: auto;
+                       margin-top: 20px;
+                       
+                }
+
+                
+                #maintopsec>div:nth-child(1)>h1{
+                font-size: 54px;
+                color: #101834;
+                /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+                line-height: 1;
+
+            }
+            #maintopsec>div:nth-child(3)>p{
+                font-size: 10px;
+                
+            }
+           
+            #maintopsec>div:nth-child(2)>p{
+                margin-top: 8px;
+                font-size: 18px;
+                line-height: 1.4;
+                font-family: Arial, Helvetica, sans-serif;
+                color :rgba(16, 24, 52, 0.75)
+            }
+            .signbottom{
+                width: 35%;
+                height: 100%;
+                margin: auto;
+                padding: 10px;
+                border-radius: 0px;
+
+                
+            }
+
+    </style>
+</head>
+<body>
+    <div id="navparent">
+        <div id="logo" >
+            <img src="https://images.ctfassets.net/rvt0uslu5yqp/18DtpQEcpcNMOWcJaoTAxQ/25d7c32ba96d21dee48d1fc3b097dad7/Mentimeter_Branding_Logo_2020_RGB-10-v2.jpg" alt="">
+
+        </div>
+        <div id="navmid">
+            <select  class="navselect hov">
+                <option value="Features">Features</option>
+                <option value="Overview">Overview</option>
+                <option value="Live Poling">Live Poling</option>
+                <option value="Word Cloud">Word Cloud</option>
+                <option value="Quiz">Quiz</option>
+                <option value="Q&A">Q&A</option>
+                <option value="Survey">Survey</option>
+                <option value="">Presentations</option>
+            </select>
+            <select class="navselect hov">
+                <option value="">Solutions</option>
+                <option value="Overview">Overview</option>
+                <option value="Speakers">Speakers</option>
+                <option value="Business">Business</option>
+                <option value="Education">Education</option>
+                <option value="Private events">Private events</option>
+                </select>
+                <select class="navselect hov">
+                    <option value="Resources">Resources</option>
+                    <option value="How to">How to</option>
+                    <option value="MentiAcademy">MentiAcademy</option>
+                    <option value="Template">Template</option>
+                    <option value="Webinars">Webinars</option>
+                    <option value="Blog">Blog</option>
+                    <option value="Integrations">Integrations</option>
+                    <option value="Help Center">Help Center</option>
+                </select>-
+            <button class="navbutton hov">Pricing</button>
+            <button class="navbutton hov">Enterprice</button>
+        </div>
+        <div id="signbox" class="navselect">
+            <button class="navbutton hov" >Log In</button>
+            <button class="signupall">Sign up</button>
+        </div>
+       </div>
+       <!-- navbar portion end -->
+       <div id="maintopsec">
+          <div>
+            <h1>Engage your audience & eliminate awkward silences</h1>
+          </div>
+          <div>
+            <p>Our easy-to-build presentations, interactive Polls, Quizzes, and Word Clouds mean more participation and less stress</p>
+          </div>
+          <div>
+            <button class="signupall signbottom">Sign up</button>
+            <p>No credit card needed</p>
+          </div>
+       </div>
+       <div>
+           
+       </div>
+</body>
+</html>
