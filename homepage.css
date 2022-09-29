@@ -1,0 +1,347 @@
+
+*{
+    margin: 0%;
+}
+#navparent{
+    border: 0px solid rgb(56, 51, 51);
+    display: flex;
+    justify-content:space-between;
+    height: 50px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+#logo{
+    width: 16%;
+    border: 0px solid red;
+    margin-left: 10%;
+}
+img{
+    width: 100%;
+    height: 100%;
+    }
+   
+    #navmid{
+        display: flex;
+        border: 1px solid green;
+        width: 30%;
+        margin: auto;
+        justify-content: space-between;
+        
+    }
+    .navselect{
+      /* display: flex; */
+      border: none;
+      font-weight: bold;
+    
+      /* justify-content: center; */
+      
+      }
+    .navbutton{
+        margin: auto;
+        height:60%;
+         font-weight: bold;
+        border: none;
+        background-color: white;
+    }
+    .hov:hover{
+        color: #1978ff;
+    }
+    
+    .signupall{
+        background-color:#1978ff;
+        margin: 10px;
+        color: white;
+        border-radius: 5px;
+        border: none;
+    }
+    /* midtpo section css start after navbar */
+    #signbox{
+        margin-right: 15%;
+    }
+    #maintopsec{
+        width:60%;
+       height: 300px;
+        border: 0px solid blue;
+        margin: auto;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        
+        }
+        #maintopsec>div:nth-child(1){
+            width: 68%;
+         margin: auto;
+         border: 0px solid teal;
+         text-align: center;
+        }
+        #maintopsec>div:nth-child(2){
+            width: 57%;
+            text-align: center;
+            border: 0px solid green;
+            margin: auto;
+        }
+        #maintopsec>div:nth-child(3){
+               border: 0px solid red;
+               display: flex;
+               width: 30%;
+               justify-content: center;
+               flex-direction: column;
+               text-align: center;
+               margin: auto;
+               margin-top: 20px;
+               
+        }
+
+        
+        #maintopsec>div:nth-child(1)>h1{
+        font-size: 54px;
+        color: #101834;
+        font-family:" MentiDisplay, Arial, sans-serif";
+        
+        line-height: 1;
+
+    }
+    #maintopsec>div:nth-child(3)>p{
+        font-size: 10px;
+        
+    }
+   
+    #maintopsec>div:nth-child(2)>p{
+        margin-top: 8px;
+        font-size: 18px;
+        line-height: 1.4;
+        font-family: Arial, Helvetica, sans-serif;
+        color :rgba(16, 24, 52, 0.75)
+    }
+    .signbottom{
+        width: 35%;
+        height: 100%;
+        margin: auto;
+        padding: 10px;
+        border-radius: 0px;
+    }
+    #topvidback{
+        width: 40%;
+        margin: auto;
+        height: 300px;
+        border: 1px solid bisque;
+        background-image : url("https://i.vimeocdn.com/video/1346437685-3d389a9b9c408ab53facf220ce22a6b23fecd82d11f08c9163ac97779db0d373-d?mw=900&mh=506");
+        display: flex;
+        background-size: contain;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #topvidback>div>button{
+        background-color:#1978ff;
+        color: white;
+        border-radius: 5px;
+        border: none;
+        padding: 10px;
+        width: 21%;
+        
+    }
+    #h3parent{
+        border: 0px solid yellow;
+        background-color:rgb(236,237,239);
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 40px;
+
+    }
+    #h3parent>div:nth-child(1){
+        border: 0px solid orange;
+        margin-top: 30px;
+        line-height: 1;
+        color: #196CFF;
+        font-weight: 600;
+        font-size: 28px;
+    }
+    #h3content{
+        border: 0px solid green;
+        height: 66%;
+        width:70% ;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #h3content>div{
+        border: 0px solid red;
+        width: 30%;
+        height: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    #h3content>div>img{
+        width: 100%;
+    }
+    #h3parent>div:nth-child(3)>button{
+        color: #196CFF;
+        border-color: #196CFF;
+        padding: 5px;
+        margin-bottom: 40px;
+        margin-top: 30px;
+    }
+
+    /* home page 4 part pic and content */
+    #h4parent{
+        width: 100%;
+        height: 250px;
+        border: 0px solid green;
+        margin-top: 20px;
+
+    }
+    #h4content{
+        width: 80%;
+        height: 90%;
+        border: 0px solid red;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    #h4content>div:nth-child(1){
+        border: 0px solid rgb(255, 217, 0);
+        width: 35%;
+        height: 40%;
+        margin: auto;
+        font-size: 26px;
+        
+    }
+    #h4content>div:nth-child(2){
+        width: 70%;
+        height: 50%;
+        margin: auto;
+        border: 0px solid black;
+        
+        display: flex;
+        justify-content: center;
+    }
+    #h4content>div:nth-child(2)>div{
+        width: 30%;
+        height: 90%;
+        border: 0px solid teal;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    #h4content>div:nth-child(2)>div>div{
+        height: 40%;
+        width: 100%;
+        border: 0px solid red;
+        margin: auto;
+        text-align: center;
+    }
+    .spanf{
+        font-size: xx-large;
+        font-weight: bold;
+        color: rgb(16,24,52);
+        
+        
+    }
+    #h4content>div>h2{
+        color: rgb(16,24,52);;
+    }
+    /* home page last upeer part one img and text */
+    #h5parent{
+        width: 100%;
+        height: 300px;
+        border: 0px solid green;
+        margin-top: 20px;
+    }
+    #h5content{
+        width: 75%;
+        height: 90%;
+        border: 0px solid red;
+        margin: auto;
+        display: flex;
+
+        
+    }
+    #h5content>div{
+        width: 45%;
+        height:95%;
+        border: 0px solid blue;
+        margin: auto;
+       
+    }
+    #h5content>div>div{
+        border: 0px solid black;
+        width: 55%;
+        height: 95%;
+        margin: auto;
+        text-align: center;
+        }
+        #h5content>div>div:last-child{
+            font-size: 32px;
+            width: 80%;
+            font-weight: 500;
+        }
+    #h5content>div>div>img{
+        width: 100%;
+        
+        }
+        #h5content>span{
+            color: #196CFF;
+        }
+        #spancol{
+            color: #1978ff;
+            display: block;
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        #h5content button{
+            color: #196CFF;
+            border-color: #196CFF;
+            padding: 8px;
+            margin-bottom: 40px;
+            margin-top: 30px;
+            font-weight: bold;
+            background-color:white;
+        }
+        /* main page bottom section */
+        #mainbottom{
+            width: 100%;
+            height: 250px;
+            border: 1px solid green;
+            margin-top: 20px;
+            background-image: url("https://static.mentimeter.com/static/images/menti-pattern.png");
+            background-size: contain;
+        }
+        #mainbottom>div:nth-child(1){
+            width: 24%;
+            height:30%;
+            color: white;
+            font-size:23px;
+            text-align: center;
+            border: 0px solid orange;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 40px;
+
+        }
+        #mainbottom>div:nth-child(2){
+            width: 10%;
+            height:30%;
+            border: 0px solid orange;
+            margin: auto;
+            display: flex;
+            color: #196CFF;
+            margin-top: 20px;
+        }
+        #mainbottom>div>button{
+            margin: auto;
+            padding: 8px;
+            color: #196CFF;
+        }
+
+    
+
+
+   
