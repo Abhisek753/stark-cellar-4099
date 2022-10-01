@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="homepage.css" />
 
 </head>
@@ -47,8 +48,8 @@
             <button class="navbutton hov">Enterprice</button>
         </div>
         <div id="signbox" class="navselect">
-            <button class="navbutton hov" >Log In</button>
-            <button class="signupall">Sign up</button>
+            <button class="navbutton hov" onclick="function2()">Log In</button>
+            <button class="signupall"><a href="signup.html">Sign up</a></button>
         </div>
        </div>
        <!-- navbar portion end -->
@@ -160,26 +161,100 @@
             <div id="footcontent">
                 <div id="foottop">
                     <div>
-                        <div> 
-                        <div></div>
+                        <div id="footlogo"> 
+                        <img src="https://images.ctfassets.net/rvt0uslu5yqp/18DtpQEcpcNMOWcJaoTAxQ/25d7c32ba96d21dee48d1fc3b097dad7/Mentimeter_Branding_Logo_2020_RGB-10-v2.jpg" alt="">
                         </div>
                     </div>
                     <div id="foottext">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
+                        <div>
+                            <p>Features</p>
+                            <span>Overview</span>
+                            <span>Live Polling</span>
+                            <span>Word Cloud</span>
+                            <span>Quiz</span>
+                            <span>Q&A</span>
+                            <span>Survey</span>
+                            <span>Presentations</span>
+                        </div>
+                        <div>
+                            <p>Resources</p>
+                            <span>Blog</span>
+                            <span>How to</span>
+                            <span>Solutions</span>
+                            <span>Templates</span>
+                            <span>Academy</span>
+                            <span>Webinars</span>
+                            <span>Comparison</span>
+                            <span>Stories</span>
+                            <span>Integrations</span>
+                        </div>
+                        <div>
+                            <p>Details</p>
+                            <span>Legal</span>
+                            <span>Policies</span>
+                            <span>Accessibility</span>
+                            <span>Help Center</span>
+                            <span>Requirements</span>
+                           </div>
+                        <div>
+                            <p>About us</p>
+                            <span>Press info</span>
+                            <span>The Team</span>
+                            <span>Jobs</span>
+                            <span>Culture</span>
+                            <span>Benefits</span>
+                            <span>Contact us</span>
+                            <span>Climate</span>
+                            <span>Investors</span>
+                        </div>
                     </div>
                     <div id="footicon">
-                        <div></div>
-                        <div></div>
+                        <div>
+                            <div id="figheart">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvfioDV65Kyaws-JkxQkTD6IYaZK0SJSin8GBQN-aJQlh9rbcFnrGd7cKGDuKfFst-L_w&usqp=CAU" alt="">
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <a href="https://www.facebook.com/Mentimeter">
+                                    <i class="fa-brands fa-square-facebook"></i>
+                                </a>
+                                
+                            </div>
+                            <div>
+                                <a href="https://www.linkedin.com/feed/">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="https://www.google.com/search?gs_ssp=eJzj4tLP1TfIyDMsS05XYDRgdGDwYi8pzywpSS0CAFnOB00&q=twitter&oq=twi&aqs=chrome.1.0i67i131i355i433j46i67i131i199i433i465j69i57j0i67l3j0i67i131i433j69i61.7281j0j4&sourceid=chrome&ie=UTF-8">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="https://www.google.com/search?q=instagram&oq=inst&aqs=chrome.2.69i57j35i39j0i67i131i433j0i67j0i67i457j0i67j69i61j69i60.7598j0j9&sourceid=chrome&ie=UTF-8">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div id="footbottom">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                    <div>
+                        <a href="">
+                            <i class="fa-light fa-globe"></i>
+                        </a>
+                        <p>Choose your language:</p>
+                    </div>
+                    <div>
+                        <a href="">English</a>
+                    </div>
+                    <div>
+                        <a href="">Portuguese (Brazil)</a>
+                    </div>
+                    <div>
+                        <a href="">Spanish</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -188,3 +263,13 @@
       
 </body>
 </html>
+<script>
+      function function2() {
+            window.location.href="login.html";
+       }
+        function function1() {
+            window.location.href="signup.html";
+       }
+       
+    
+</script>

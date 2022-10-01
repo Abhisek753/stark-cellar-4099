@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css" />
+</head>
+<bo>
+    <body>
+       <div id="maintopdiv">
+        <div>
+            <img src="https://images.ctfassets.net/rvt0uslu5yqp/18DtpQEcpcNMOWcJaoTAxQ/25d7c32ba96d21dee48d1fc3b097dad7/Mentimeter_Branding_Logo_2020_RGB-10-v2.jpg" alt="">
+        </div>
+        <div>
+            <h1>Create a free account</h1>
+        </div>
+        
+        <form action="" id="form">
+        
+         <button class="divdata">Sign up with Facebook</button>
+         <button class="divdata but2">Sign up with Google</button>
+           <div class="stextdiv"><span class="belowtext">or using email</span></div>
+          <label for="name">First and last name</label>
+          <input id="name" name="name" type="text" />
+          <label for="email">Your email address</label>
+          <input  type="email" name="email" id="email" />
+           <label for="pass">Choose a password</label>
+          <input type="password" name="Password" id="pass">
+         
+          <input id="submit" type="submit" name="submit" value="Sign up" />
+          <div class="stextdiv "><span class="belowtext last">By signing up you accept our terms of use and policies.</span></div>
+          <div id="loginbut">
+            <h3>Already have an account? <span class="halfcol"> Log in </span></h3>
+            <h3 class="halfcol">Sign up with SSO</h3>
+          </div>
+        </form>
+    </div>
+      </body>
+      <script>
+        //you need to code here
+        document.querySelector("form").addEventListener("submit",signing);
+        let jobarr=JSON.parse(localStorage.getItem("userdata"))||[];
+        function signing(event){
+          event.preventDefault();
+          let enterdata={
+            person_name:document.querySelector("#name").value,
+            person_email:document.querySelector("#email").value,
+            password:document.querySelector("#pass").value
+            }
+            console.log(enterdata);
+            jobarr.push(enterdata);
+            localStorage.setItem("userdata",JSON.stringify(jobarr));
+              alert("Signup Done")
+              window.location.href="login.html"
+        }
+        
+        
+      </script>
+
+</html>

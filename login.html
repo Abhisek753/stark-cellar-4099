@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css" />
+</head>
+<bo>
+    <body>
+       <div id="maintopdiv">
+        <div>
+            <img src="https://images.ctfassets.net/rvt0uslu5yqp/18DtpQEcpcNMOWcJaoTAxQ/25d7c32ba96d21dee48d1fc3b097dad7/Mentimeter_Branding_Logo_2020_RGB-10-v2.jpg" alt="">
+        </div>
+        <div>
+            <h1>Welcome back!</h1>
+            <p>Log in to your Mentimeter account</p>
+        </div>
+        
+        <form action="" id="form">
+        
+         <button class="divdata">Log in with Facebook</button>
+         <button class="divdata but2">Log in with Google</button>
+           <div class="stextdiv"><span class="belowtext">or using email</span></div>
+         <label for="email">Your email address</label>
+          <input  type="email" name="email" id="email" />
+           <label for="pass">Choose a password</label>
+          <input type="password" name="Password" id="pass">
+         
+          <input id="submit" type="submit" name="submit" value="Log in" />
+          <div id="loginbut">
+            <h3>Already have an account? <span class="halfcol"> Log in </span></h3>
+            <h3 class="halfcol">New to Mentimeter? <span>Sign up now</span></h3>
+          </div>
+        </form>
+    </div>
+      </body>
+      <script>
+   let data=JSON.parse(localStorage.getItem("userdata"))
+   console.log(data);
+    document.querySelector("form").addEventListener("submit",logging);
+
+    
+        function logging(event){
+          event.preventDefault();
+          
+           let person_email=document.querySelector("#email").value;
+           let password=document.querySelector("#pass").value
+           console.log(person_email,password)
+           let flag =false
+        for(i=0;i<data.length;i++){
+            if(person_email==data[i].person_email &&password==data[i].password){
+                flag=true
+            }
+        };
+        if(flag==true){
+            alert("login successfull")
+        }else{
+            alert("please signup")
+        
+        }
+    }
+    
+        
+      </script>
+
+</html>
