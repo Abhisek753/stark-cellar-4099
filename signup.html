@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    
     <link rel="stylesheet" href="index.css" />
 </head>
 <bo>
     <body>
        <div id="maintopdiv">
         <div>
-            <img src="https://images.ctfassets.net/rvt0uslu5yqp/18DtpQEcpcNMOWcJaoTAxQ/25d7c32ba96d21dee48d1fc3b097dad7/Mentimeter_Branding_Logo_2020_RGB-10-v2.jpg" alt="">
+            <img onclick="clickimg()" src="https://images.ctfassets.net/rvt0uslu5yqp/18DtpQEcpcNMOWcJaoTAxQ/25d7c32ba96d21dee48d1fc3b097dad7/Mentimeter_Branding_Logo_2020_RGB-10-v2.jpg" alt="">
         </div>
         <div>
             <h1>Create a free account</h1>
@@ -20,8 +21,8 @@
         
         <form action="" id="form">
         
-         <button class="divdata">Sign up with Facebook</button>
-         <button class="divdata but2">Sign up with Google</button>
+         <button class="divdata"><span><i class="fa-brands fa-square-facebook"></i></span> Sign up with Facebook</button>
+         <button class="divdata but2"><span><i class="fa-brands fa-google"></i></span> Sign up with Google</button>
            <div class="stextdiv"><span class="belowtext">or using email</span></div>
           <label for="name">First and last name</label>
           <input id="name" name="name" type="text" />
@@ -33,7 +34,7 @@
           <input id="submit" type="submit" name="submit" value="Sign up" />
           <div class="stextdiv "><span class="belowtext last">By signing up you accept our terms of use and policies.</span></div>
           <div id="loginbut">
-            <h3>Already have an account? <span class="halfcol"> Log in </span></h3>
+            <h3>Already have an account? <span class="halfcol" onclick="takelogin()">Log in</span></h3>
             <h3 class="halfcol">Sign up with SSO</h3>
           </div>
         </form>
@@ -55,6 +56,12 @@
             localStorage.setItem("userdata",JSON.stringify(jobarr));
               alert("Signup Done")
               window.location.href="login.html"
+        }
+        function clickimg(){
+          window.location.href="Homepage.html"
+        }
+        function takelogin(){
+          window.location.href="login.html"
         }
         
         
