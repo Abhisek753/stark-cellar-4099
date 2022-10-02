@@ -12,7 +12,7 @@
     <body>
        <div id="maintopdiv">
         <div>
-            <img src="https://images.ctfassets.net/rvt0uslu5yqp/18DtpQEcpcNMOWcJaoTAxQ/25d7c32ba96d21dee48d1fc3b097dad7/Mentimeter_Branding_Logo_2020_RGB-10-v2.jpg" alt="">
+            <img onclick="clickimg()" src="https://images.ctfassets.net/rvt0uslu5yqp/18DtpQEcpcNMOWcJaoTAxQ/25d7c32ba96d21dee48d1fc3b097dad7/Mentimeter_Branding_Logo_2020_RGB-10-v2.jpg" alt="">
         </div>
         <div>
             <h1>Welcome back!</h1>
@@ -21,8 +21,8 @@
         
         <form action="" id="form">
         
-         <button class="divdata">Log in with Facebook</button>
-         <button class="divdata but2">Log in with Google</button>
+         <button class="divdata"><span><i class="fa-brands fa-square-facebook"></i></span> Log in with Facebook</button>
+         <button class="divdata but2"><span><i class="fa-brands fa-google"></i></span> Log in with Google</button>
            <div class="stextdiv"><span class="belowtext">or using email</span></div>
          <label for="email">Your email address</label>
           <input  type="email" name="email" id="email" />
@@ -31,8 +31,8 @@
          
           <input id="submit" type="submit" name="submit" value="Log in" />
           <div id="loginbut">
-            <h3>Already have an account? <span class="halfcol"> Log in </span></h3>
-            <h3 class="halfcol">New to Mentimeter? <span>Sign up now</span></h3>
+            <h3>Forgot password <span class="halfcol"> Log in with SSO </span></h3>
+            <h3 class="halfcol">New to Mentimeter? <span onclick="takesign()"> Sign up now</span></h3>
           </div>
         </form>
     </div>
@@ -62,7 +62,13 @@
         
         }
     }
-    
+    function clickimg(){
+          window.location.href="Homepage.html"
+        }
+       function takesign(){
+        window.location.href="signup.html"
+       }
+
         
       </script>
 

@@ -52,6 +52,7 @@ img{
         color: white;
         border-radius: 5px;
         border: none;
+        padding: 10px;
     }
     /* midtpo section css start after navbar */
     #signbox{
@@ -59,6 +60,8 @@ img{
         display: flex;
         justify-content: center;
         align-items: center;
+        padding: 10px;
+        /* border: 1px solid red; */
         
     }
     #maintopsec{
@@ -127,7 +130,7 @@ img{
         width: 40%;
         margin: auto;
         height: 300px;
-        border: 1px solid bisque;
+        border: 0px solid bisque;
         background-image : url("https://i.vimeocdn.com/video/1346437685-3d389a9b9c408ab53facf220ce22a6b23fecd82d11f08c9163ac97779db0d373-d?mw=900&mh=506");
         display: flex;
         background-size: contain;
@@ -139,7 +142,7 @@ img{
     #topvidback>div{
         width: 18%;
         height: 10%;
-        border: 1px solid red;
+        border: 0px solid red;
         display: flex;
         opacity: 1;
         
